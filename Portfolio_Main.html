@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules Grange Portfolio</title>
+        <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script> 
+        <link rel="stylesheet" href="PortfolioStyleSheet.css">
+    </head>
+    <body>
+        <div> <!--Acceuil-->
+            <div class="home-container">
+            <img class="home-background" src="img/beach_sunset.gif" alt="">
+            <div class="home-content">
+                <h1 style="font-size:35px">Jules Renaud-Grange</h1>
+                <h3 style="font-size:22px;">Etudiant en Informatique</h3>
+            </div>
+            </div>
+        </div>
+        <div class="navigation"> <!--Barre de Navigation-->
+          <div class="navbar">
+            <div class="navlinks">
+              <a href="#Top">Acceuil</a>
+              <a href="#APDM">À Propos de Moi</a>
+              <a href="#Compétences">Mes Compétences</a>
+              <a href="#Projets">Mes Projets</a>
+              <a href="#Contact">Me Contacter</a>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        <div> <!--About Me-->
+          <div class="main"> <!--À changer-->
+            <h1 id="APDM" style="margin-top: 25px;">À Propos de Moi</h1>
+            <hr>
+            <p style="text-align: center; font-size: 20px; margin-bottom: 80px; margin-top: 40px;">
+              Je m'appelle Jules Renaud-Grange, et ma philosophie est simple : Le travail est la clé du succès.
+            </p>
+          </div>
+        </div>
+        <div><!--Timeline-->
+          <div class="pre-timeline"></div>
+            <div class="timeline">
+              <div class="tl">
+                <div class="tl-content">
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2020</h1></div>
+                    <div class="tl-body"><p>Arrivée au lycée Diderot.</p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2023</h1></div>
+                    <div class="tl-body"><p>Obtention du BAC STI2D, mention très bien.<br>C'est le début des études supérieures !</p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title big"><h1><span id="date"></span></h1></div>
+                    <div class="tl-body"><p style="color: var(--primary-color)">aujourd'hui :</p></div>
+                    <div class="tl-body"><p style="margin-top: 70px;">
+                      Actuellement en 1ère année de BUT Informatique à 
+                      l'Université Gustave Eiffel, je développe mes compétences 
+                      et suis activement à la recherche d'une alternance pour ma 
+                      deuxième année de BUT.
+                    </p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2026+</h1></div>
+                    <div class="tl-body"><p style="color: var(--primary-color)">Objectif :</p></div>
+                    <div class="tl-body"><p style="margin-top: 70px;">
+                      Obtention du diplôme du BUT ainsi que la poursuite de mes étude vers un diplôme d'Ingénieur.
+                    </p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="post-timeline"></div>
+        </div>
+        <div class="main">
+          <div> <!--Skills-->
+            <h1 id="Compétences" class="part-title">Mes Compétences</h1>
+            <hr>
+            <p style="max-width: 650px;"> <!--À changer-->
+                J'ai développé tout au long de mon parcours des compétences 
+                approfondies dans différents domaines, ainsi qu'une maitrise avancée
+                de la langue anglaise.
+            </p>
+            <p style="text-align: center; padding-bottom: 10px;"><a href="doc/CV.pdf">Mon CV.</a></p>
+              <div class="row">
+                    <div class="skill"> <!--Python-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/python.png" alt="python">
+                          <h3 class="center">Python</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--C++-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/c++.png" alt="c++">
+                          <h3 class="center">C++</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--Bash-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/bash.png" alt="bash">
+                          <h3 class="center">Linux Bash</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--Html-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/html.png" alt="html">
+                          <h3 class="center">HTML</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--Css-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/css.png" alt="css">
+                          <h3 class="center">CSS</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--SQL-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/sql.png" alt="sql">
+                          <h3 class="center">SQL</h3>
+                        </div>
+                    </div>
+                    <div class="skill"> <!--Excell-->
+                        <div class="content">
+                          <img class="skill-logo" src="img/excell.png" alt="excell">
+                          <h3 class="center">Excell</h3>
+                        </div>
+                    </div>
+              </div>
+          </div>
+          <div> <!--Projects-->
+            <h1 id="Projets" class="part-title">Mes Projets</h1>
+            <hr>
+            <div class="row">
+                <div class="column"> <!--Qix-->
+                  <div class="content">
+                    <a href="Portfolio_Qix.html"><img class="imgProj" src="img/QixScreenshot.png" alt="Qix"></a>
+                    <h3>Qix</h3>
+                    <p>
+                        La reproduction en python d'un ancien jeu d'arcade : Qix.<br><br>
+                        Les règles sont simples, capturer le plus de zone possible,
+                        mais des ennemis, tel que le Qix ou les sparx vont tenter de vous arreter.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column"> <!--Alger-->
+                  <div class="content">
+                    <a href="https://etudiant.u-pem.fr/~jules.renaud-grange/Alger/Acceuil.html">
+                    <img class="imgProj" src="img/algers.jpg" alt="Site Alger"></a>
+                    <h3>Site en partenariat avec l'UNESCO</h3>
+                    <p>
+                        Projet de groupe d'un site internet sur la ville d'Alger en partenariat 
+                        avec l'UNESCO en html/css.<br><br>
+                        Présentation des différents aspects de la ville d'Alger : son histoire, 
+                        sa culture, son architecture et ses différents monuments.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column"> <!--Server-->
+                    <div class="content">
+                      <a href="doc/Rapport_GRANGE_Jules_Multiboot.pdf"><img class="imgProj" src="img/Server.jpg" alt="DualBoot"></a>
+                      <h3>serveur sous Linux à partir d'un ancien PC</h3>
+                        <p>
+                        Installation de Linux sur un ancien ordinateur HP,
+                        mise en place d'un serveur accessible à distance ainsi que
+                        l'hébergement d'un serveur Minecraft moddé et fonctionnel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column"> <!--BDD-->
+                    <div class="content">
+                      <a href="Portfolio_BDD_e-sport.html"><img class="imgProj" src="img/MCD_e-sport.jpg" alt="BDDesport"></a>
+                      <h3>Base de donnée de tournois e-sport sur mySql</h3>
+                      <p>
+                        Une base de donnée sous mySql permettant la gestion de tournois d'e-sport,
+                        en prenant en compte les joueurs, leurs équipes, leurs clubs, leurs sponsors,
+                        les tournois ainsi que les parties.
+                      </p>
+                    </div>
+                </div>
+
+                <div class="column"> <!--Portfolio-->
+                  <div class="content">
+                    <a href=""><img class="imgProj" src="img/Portfolio.png" alt="Portfolio"></a>
+                    <h3>Portfolio</h3>
+                    <p>
+                      Le Portfolio sur lequel vous êtes, fais en html/css avec un peu de javascript.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div> <!--Contact-->
+            <h1 id="Contact" class="part-title">Me Contacter</h1>
+            <hr>
+            <table class="contact-table">
+              <tr class="contact-row">
+                <td>email :</td>
+                <td class="contact-link"><a href="mailto:julesgrange@outlook.fr">julesgrange@outlook.fr</a></td>
+              </tr>
+              <tr class="contact-row">
+                <td>téléphone :</td>
+                <td class="contact-link"><a href="tel:0601283728">06 01 28 37 28</a></td>
+              </tr>
+              <tr class="contact-row">
+                <td>Linkedin :</td>
+                <td class="contact-link"><a href="https://www.linkedin.com/in/jules-grange-511723298/">Jules Grange</a></td>
+              </tr>
+          </table>
+          </div>
+        </div>
+      <script>
+        // Affichage de la date actuelle en format fr pour la timeline
+        moment.locale('fr', {
+          months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+          weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
+          longDateFormat : {LL : 'D MMMM YYYY'},
+        });
+        var date = moment().format('LL');
+        document.getElementById("date").innerHTML = date;
+
+        window.onscroll = function() {ProgressBar()};
+        function ProgressBar() 
+        {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+      </script>
+    </body>
+</html>
