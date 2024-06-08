@@ -20,16 +20,16 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    -ms-overflow-style: none;  /* Internet Explorer, Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 body {
     background-color: var(--background-color);
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    -ms-overflow-style: none;  /* Internet Explorer, Edge */
-    scrollbar-width: none;  /* Firefox */
 }
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
     display: none; /*Chrome, Safari, Opera */
 }
 .main {
