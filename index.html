@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules Grange Portfolio</title>
+        <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script> 
+        <link rel="stylesheet" href="PortfolioStyleSheet.css">
+    </head>
+    <body>
+        <div> <!--Acceuil-->
+            <div class="home-container">
+            <img class="home-background" src="img/beach_sunset.gif" alt="">
+            <div class="home-content">
+                <h1 style="font-size:35px">Jules Renaud-Grange</h1>
+                <h3 style="font-size:22px;">Etudiant en 1ère année de BUT Informatique</h3>
+            </div>
+            </div>
+        </div>
+        <div class="navigation"> <!--Barre de Navigation-->
+          <div class="navbar">
+            <div class="navlinks">
+              <a href="#">Acceuil</a>
+              <a href="#APDM">À Propos de Moi</a>
+              <a href="#Compétences">Mes Compétences</a>
+              <a href="#Projets">Mes Projets</a>
+              <a href="#Contact">Me Contacter</a>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        <div> <!--About Me-->
+          <div class="main">
+            <h1 id="APDM" style="margin-top: 25px;">À Propos de Moi</h1>
+            <hr>
+            <p style="text-align: center; font-size: 20px; margin-bottom: 40px; margin-top: 40px;">
+              Je m'appelle Jules Renaud-Grange, et ma philosophie est simple : Le travail est la clé du succès.
+            </p>
+            <table>
+              <tr>
+                <th style="padding-right: 50px;">
+                  <img src="img/photo.png" alt="photo" id="photo" style="height: 400px; width: auto;">
+                </th>
+                <th style="text-align: left;">
+                  <h3>Mes objectifs professionnels :</h3>
+                  <hr>
+                  <p style="font-weight: normal;">
+                    <b>À court terme :</b><br>Trouver une alternance pour acquérir une expérience du travail en entreprise et du monde professionnel.<br><br>
+                    <b>À moyen terme :</b><br>Entrer en école d'Ingénieur afin de développer mes compétences.<br><br>
+                    <b>À long terme :</b><br>Rejoindre une entreprise prometteuse et innovante.
+                  </p>
+                  <div class="cv-box"><a href="doc/RENAUD--GRANGE Jules-CV.pdf" target="_blank" rel="noopener noreferrer"><div class="cv"><p>Mon CV</p></div></a></div>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div><!--Timeline-->
+          <div class="main"><h1 style="margin-top: 60px;" id="Timeline">Mon Parcours</h1></div>
+          <div class="pre-timeline"></div>
+            <div class="timeline">
+              <div class="tl">
+                <div class="tl-content">
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2020</h1></div>
+                    <div class="tl-body"><p>Arrivée au lycée Diderot, Paris 19.<br>Spécialité SIN : systèmes d'informations et numériques.</p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2023</h1></div>
+                    <div class="tl-body"><p>Obtention du BAC STI2D avec mention très bien.<br>C'est le début des études sup !</p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title big"><h1><span id="date"></span></h1></div>
+                    <div class="tl-body"><p style="color: var(--primary-color)">aujourd'hui :</p></div>
+                    <div class="tl-body"><p style="margin-top: 70px;">
+                      Actuellement en 1ère année de BUT Informatique à 
+                      l'Université Gustave Eiffel, je développe mes compétences 
+                      et suis activement à la recherche d'une alternance pour ma 
+                      deuxième année de BUT.
+                    </p></div>
+                  </div>
+                  <div class="tl-entry">
+                    <div class="tl-title"><h1>2026+</h1></div>
+                    <div class="tl-body"><p style="color: var(--primary-color)">Objectif :</p></div>
+                    <div class="tl-body"><p style="margin-top: 70px;">
+                      Obtention de mon diplôme et poursuite de mes études vers un diplôme d'Ingénieur.
+                    </p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="post-timeline"></div>
+        </div>
+        <div class="main">
+          <div> <!--Skills-->
+            <h1 id="Compétences" class="part-title">Mes Compétences</h1>
+            <hr>
+            <p style="max-width: 650px;"> <!--À changer-->
+                J'ai développé tout au long de mon parcours des compétences 
+                approfondies dans différents domaines, ainsi qu'une maîtrise avancée
+                de la langue anglaise.
+            </p>
+            <div class="row">
+              <div class="skills-tab">
+                <div class="skill"> <!--Developpement-->
+                    <div class="content">
+                      <button class="tablinks" onclick="openSkill(event, 'dev')"><img class="skill-logo" src="img/code.png" alt="dev"></button>
+                      <h3 class="center">Development</h3>
+                    </div>
+                </div>
+                <div class="skill"> <!--Web Dev-->
+                    <div class="content">
+                      <button class="tablinks" onclick="openSkill(event, 'dev-web')"><img class="skill-logo" src="img/web_dev.png" alt="dev-web"></button>
+                      <h3 class="center">Web Development</h3>
+                    </div>
+                </div>
+                <div class="skill"> <!--Database-->
+                    <div class="content">
+                      <button class="tablinks" onclick="openSkill(event, 'database')"><img class="skill-logo" src="img/database.png" alt="database"></button>
+                      <h3 class="center">Database</h3>
+                    </div>
+                </div>
+                <div class="skill"> <!--Autre-->
+                    <div class="content">
+                      <button class="tablinks" onclick="openSkill(event, 'other')"><img class="skill-logo" src="img/other.png" alt="autre"></button>
+                      <h3 class="center">Autres</h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="dev" class="skills-tab-content">
+              <table class="skills-table">
+                <tr> <!--Python Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/python.png" alt="python"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>80%</h3></div>
+                    <div class="exp-bar" style="width: 80%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--Python Desc-->
+                  <td><h3>Python</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>1 an</b> d'expérience.<br>Commencé en septembre 2023.</p>
+                    <p class="skill-desc">La base.</p>
+                  </td>
+                </tr>
+                <tr> <!--Java Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/java.png" alt="java"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>50%</h3></div>
+                    <div class="exp-bar" style="width: 50%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--Java Desc-->
+                  <td><h3>Java</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>6 mois</b> d'expérience.<br>Commencé en janvier 2024.</p>
+                    <p class="skill-desc">Je maîtrise aussi JavaFX et SceneBuilder !</p>
+                  </td>
+                </tr>
+                <tr> <!--C Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/C.png" alt="c"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>60%</h3></div>
+                    <div class="exp-bar" style="width: 60%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--C Desc-->
+                  <td><h3>C</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>6 mois</b> d'expérience.<br>Commencé en janvier 2024.</p>
+                    <p class="skill-desc">Les pointeurs devant le collège.</p>
+                  </td>
+                </tr>
+                <tr> <!--C++ Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/c++.png" alt="c++"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>30%</h3></div>
+                    <div class="exp-bar" style="width: 30%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--C++ Desc-->
+                  <td><h3>C++</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>6 mois</b> d'expérience.<br>Occasionnellement travaillé en années de 1ère/Terminale.</p>
+                    <p class="skill-desc">Utilisé avec des cartes Arduino, c'était cool.</p>
+                  </td>
+                </tr>
+                <tr> <!--Bash Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/bash.png" alt="Bash"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>40%</h3></div>
+                    <div class="exp-bar" style="width: 40%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--Bash Desc-->
+                  <td><h3>Linux Bash</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>4 mois</b> d'expérience.<br>Commencé en septembre 2023.</p>
+                    <p class="skill-desc">.sh</p>
+                  </td>
+                </tr>
+                <tr> <!--Width Seter-->
+                  <td></td>
+                  <td>
+                    <div class="exp-bar-hollow" style="background-color: transparent;"></div>
+                    <div class="exp-bar" style="width: 600px; background-color: transparent;"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="dev-web" class="skills-tab-content">
+              <table class="skills-table">
+                <tr> <!--HTML Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/html.png" alt="HTML"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>80%</h3></div>
+                    <div class="exp-bar" style="width: 80%;"></div>
+                  </td>
+                </tr> 
+                <tr> <!--HTML Desc-->
+                  <td><h3>HTML<br>CSS</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>1 an</b> d'expérience.<br>Commencé en janvier 2024.</p>
+                    <p class="skill-desc"></p>
+                  </td>
+                </tr>
+                <tr> <!--PHP Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/php.png" alt="JS"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>50%</h3></div>
+                    <div class="exp-bar" style="width: 50%;"></div>
+                  </td>
+                </tr> 
+                <tr> <!--PHP Desc-->
+                  <td><h3>PHP</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>6 mois</b> d'expérience.<br>Commencé en janvier 2024.</p>
+                    <p class="skill-desc"></p>
+                  </td>
+                </tr>
+                <tr> <!--JavaScript Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/JavaScript.png" alt="JS" style="border-radius: 15%;"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>10%</h3></div>
+                    <div class="exp-bar" style="width: 10%;"></div>
+                  </td>
+                </tr> 
+                <tr> <!--JavaScript Desc-->
+                  <td><h3>Java<br>Script</h3></td>
+                  <td>
+                    <p class="skill-time"><b>Occasionnellement</b> vu.<br>En dehors de ma formation.</p>
+                    <p class="skill-desc"></p>
+                  </td>
+                </tr>
+                <tr> <!--Width Seter-->
+                  <td></td>
+                  <td>
+                    <div class="exp-bar-hollow" style="background-color: transparent;"></div>
+                    <div class="exp-bar" style="width: 600px; background-color: transparent;"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="database" class="skills-tab-content">
+              <table class="skills-table">
+                <tr> <!--SQL Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/sql.png" alt="SQL"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>80%</h3></div>
+                    <div class="exp-bar" style="width: 80%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--SQL Desc-->
+                  <td><h3>SQL</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>1 an</b> d'expérience.<br>Commencé en septembre 2023.</p>
+                    <p class="skill-desc">SELECT * FROM Université Gustave Eiffel<br>WHERE prenom='Jules'<br>AND nom='Renaud Grange';</p>
+                  </td>
+                </tr>
+
+                <tr> <!--PostgreSQL Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/PostgreSQL.png" alt="SQL"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>50%</h3></div>
+                    <div class="exp-bar" style="width: 50%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--PostgreSQL Desc-->
+                  <td><h3>Postgre</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>6 mois</b> d'expérience.<br>Commencé en janvier 2024.</p>
+                    <p class="skill-desc">COMMIT;</p>
+                  </td>
+                </tr>
+
+                <tr> <!--Width Seter-->
+                  <td></td>
+                  <td>
+                    <div class="exp-bar-hollow" style="background-color: transparent;"></div>
+                    <div class="exp-bar" style="width: 600px; background-color: transparent;"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="other" class="skills-tab-content">
+              <table class="skills-table">
+                <tr> <!--Figma Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/figma.png" alt="Figma"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>60%</h3></div>
+                    <div class="exp-bar" style="width: 60%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--Figma Desc-->
+                  <td><h3>Figma</h3></td>
+                  <td>
+                    <p class="skill-time">~<b>1 an</b> d'expérience.<br>Commencé en septembre 2023.</p>
+                    <p class="skill-desc">Utilisé lors de la conception de plusieurs de mes projets.</p>
+                  </td>
+                </tr>
+
+                <tr> <!--Office Bar-->
+                  <td class="skill-mini-logo-container"><img class="skill-mini-logo" src="img/office.png" alt="Figma"></td>
+                  <td>
+                    <div class="exp-bar-hollow"><h3>80%</h3></div>
+                    <div class="exp-bar" style="width: 80%;"></div>
+                  </td>
+                </tr>
+                <tr> <!--Office Desc-->
+                  <td><h3>Suite<br>Office</h3></td>
+                  <td>
+                    <p class="skill-time"><b>Souvent</b> utilisé.</p>
+                    <p class="skill-desc">Documentation & Tableur. (et même en Anglais).</p>
+                  </td>
+                </tr>
+
+                <tr> <!--Width Seter-->
+                  <td></td>
+                  <td>
+                    <div class="exp-bar-hollow" style="background-color: transparent;"></div>
+                    <div class="exp-bar" style="width: 600px; background-color: transparent;"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="soft-skills">
+              <h1>Soft Skills</h1>
+              <hr>
+              <p>
+                <b>Esprit d'équipe :</b><br>habitué à travailler sur des projets en équipe, tout comme en autonomie.<br><br>
+                <b>Gestion du temps :</b><br>je travaille sur plusieurs projets en même temps et j'me plains même pas.<br><br>
+                <b>Communication :</b><br>à l'aise à l'oral, je sais exprimer mes idées clairement et me faire comprendre.<br><br>
+                <b>Résolution de problèmes :</b><br>capable de résoudre des problèmes complexes en cherchant l'optimisation.<br><br>
+                <b>Créativité :</b><br>ce petit côté artistique.
+              </p>
+            </div>
+
+          </div>
+          <div> <!--Projects-->
+            <h1 id="Projets" class="part-title">Mes Projets</h1>
+            <hr>
+            <h3>Projets de développement d'application</h3>
+            <div class="row">
+              <div class="column small"> <!--Qix-->
+                <div class="content">
+                  <a href="Portfolio_Qix.html"><img class="imgProj" src="img/QixScreenshot.png" alt="Qix"></a>
+                  <h3>Qix</h3>
+                  <p>
+                      La reproduction en <b>Python</b> d'un ancien jeu d'arcade : Qix.<br><br>
+                      Les règles sont simples, capturer le plus de zones possibles,
+                      mais des ennemis, tel que le Qix ou les sparx vont tenter de vous arrêter.<br><br>
+                      Réalisé avec <a href="https://www.linkedin.com/in/khephrendjelidi/">Khephren Djelidi</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="column small"> <!--Codex-->
+                <div class="content">
+                  <a href="Portfolio_Codex.html"><img class="imgProj" src="img/Codex.png" alt="Codex Naturalis"></a>
+                  <h3>Codex Naturalis</h3>
+                  <p>
+                      La reproduction en <b>Java</b> d'un jeu de plateau : Codex Naturalis.<br><br>
+                      Un jeu de carte demandant d'agrandir le plateau en placant les cartes dans les coins des autres. 
+                      On collecte des ressources permettant de poser des cartes dorées afin d'obtenir des points et gagner la partie.<br><br>
+                      Réalisé avec <a href="https://www.linkedin.com/in/randy-bou-jaber/">Randy Bou Jaber</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="column small"> <!--Graphe-->
+                <div class="content">
+                  <img class="imgProj" src="img/graphe.png" alt="Graphe">
+                  <h3>Opérateur d'automates</h3>
+                  <p>
+                    Un programme en <b>Python</b> permettant de faire des opérations sur des automates.<br><br>
+                    Contient différentes opérations tel que la déterminisation, la complémentation, 
+                    l'intersection ou la différence de deux automates, les propriétés de fermeture 
+                    (automate préfixe, suffixe, facteur et miroir) et la minimisation.<br>
+                    Télécharger le fichier py : <a href="doc/Randy Bou-Jaber  Jules Renaud-Grange SAE Graphe.py">ici</a>.<br><br>
+                    Réalisé avec <a href="https://www.linkedin.com/in/randy-bou-jaber/">Randy Bou Jaber</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="column small"> <!--Polynome-->
+                <div class="content">
+                  <img class="imgProj" src="img/polynome.png" alt="Polynome">
+                  <h3>Opérateur de Polynomes</h3>
+                  <p>
+                    Un programme en <b>C</b> permettant de faire des opérations sur des Polynomes.<br><br>
+                    Permet différentes opérations sur des polynomes de tous degrés, de sa valeur à x, sa dérivée ainsi que la somme ou le produit de deux polynomes.<br>
+                    Télécharger le fichier c : <a href="doc/Operateur_Polynome_GRANGE_Jules.c">ici</a>.<br><br>
+                    Réalisé seul.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+
+            <h3>Projets de développement Web</h3>
+            <div class="row">
+              <div class="column small"> <!--BDD-->
+                  <div class="content">
+                    <a href="Portfolio_BDD_e-sport.html"><img class="imgProj" src="img/site_E-Sport.png" alt="BDDesport"></a>
+                    <h3>Site de gestion des tournois e-sport</h3>
+                    <p>
+                      Un site web réalisé en <b>HTML/CSS & PHP</b> lié à une base de données <b>PostgreSQL</b>.<br><br>
+                      Le site permet de visionner et de gérer (en tant qu'admin) tout ce qui touche à l'e-sport : 
+                      les joueurs, les équipes, les compétitions, les matchs...<br><br>
+                      Réalisé avec <a href="https://www.linkedin.com/in/rissot/">Benjamin Rissot</a>.
+                    </p>
+                  </div>
+              </div>
+
+              <div class="column small"> <!--Alger-->
+                <div class="content">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <img class="imgProj" src="img/algers.jpg" alt="Site Alger"></a>
+                  <h3>Site en partenariat avec l'UNESCO</h3>
+                  <p>
+                      Projet de groupe d'un site internet sur la ville d'Alger en partenariat 
+                      avec l'UNESCO en <b>HTML/CSS & PHP</b>.<br><br>
+                      Présentation des différents aspects de la ville d'Alger : son histoire, 
+                      sa culture, son architecture et ses différents monuments.<br><br>
+                      Réalisé avec :<br><a href="https://www.linkedin.com/in/khephrendjelidi/">Khephren Djelidi</a>, 
+                      <a href="https://www.linkedin.com/in/martial-carceles-b5507a252/">Martial Carceles</a>,
+                      <a href="https://www.linkedin.com/in/daniel-dos-santos2005/">Daniel Dos Santos</a>,
+                      <a href="https://www.linkedin.com/in/loïc-rakotoniary-b2235929a/">Loïc Rakotoniary</a> et
+                      <a href="https://www.linkedin.com/in/heleneraluleroy/">Hélène Ralu-Leroy</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="column small"> <!--Amis d'Or-->
+                <div class="content">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <img class="imgProj" src="img/Amis_d'Or.png" alt="Amis d'Or"></a>
+                  <h3>Amis d'Or</h3>
+                  <p>
+                      Projet de groupe d'un site de rencontres amicales pour seniors en <b>HTML/CSS & PHP</b> lié à une base de données.<br><br>
+                      Un projet de qualité de développement qui s'est concentré sur l'étude des utilisateurs 
+                      et la définition des besoins.<br><br>
+                      Réalisé avec :<br><a href="https://www.linkedin.com/in/martial-carceles-b5507a252/">Martial Carceles</a>,
+                      <a href="https://www.linkedin.com/in/rissot/">Benjamin Rissot</a> et
+                      <a href="https://www.linkedin.com/in/jimmy-te/">Jimmy Te</a>. 
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <h3>Autres Projets</h3>
+            <div class="row">
+              <div class="column small"> <!--Server-->
+                <div class="content">
+                  <a href="doc/Rapport_GRANGE_Jules_Multiboot.pdf" target="_blank" rel="noopener noreferrer"><img class="imgProj" src="img/Server.jpg" alt="DualBoot"></a>
+                  <h3>Serveur sous Linux à partir d'un ancien PC</h3>
+                  <p>
+                  Installation de Linux sur un ancien ordinateur HP,
+                  mise en place d'un serveur accessible à distance ainsi que
+                  l'hébergement d'un serveur Minecraft moddé et fonctionnel.<br><br>
+                  Réalisé seul.
+                  </p>
+                </div>
+              </div>
+
+              <div class="column small"> <!--DHCP-->
+                <div class="content">
+                  <a href="doc/Rapport_DHCP_Server.pdf" target="_blank" rel="noopener noreferrer"><img class="imgProj" src="img/dhcp.png" alt="DHCP"></a>
+                  <h3>Serveur DHCP</h3>
+                  <p>
+                    Installation et configuration d'un serveur DHCP qui a pour rôle d'attribuer automatiquement 
+                    des adresses IP aux différentes machines d'un réseau informatique, simulé sur Netkit.<br><br>
+                    Réalisé avec <a href="https://www.linkedin.com/in/lemaire-antonin/">Antonin Lemaire</a> et 
+                    <a href="https://www.linkedin.com/in/hoang-anh-thomas-ngo/">Thomas Ngo</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div> <!--Contact-->
+            <h1 id="Contact" class="part-title">Me Contacter</h1>
+            <hr>
+            <table class="contact-table">
+              <tr class="contact-row">
+                <td>email :</td>
+                <td class="contact-link"><a href="mailto:julesgrange@outlook.fr">julesgrange@outlook.fr</a></td>
+              </tr>
+              <tr class="contact-row">
+                <td>téléphone :</td>
+                <td class="contact-link"><a href="tel:0601283728">06 01 28 37 28</a></td>
+              </tr>
+              <tr class="contact-row">
+                <td>Linkedin :</td>
+                <td class="contact-link"><a href="https://www.linkedin.com/in/jules-grange-511723298/">Jules Grange</a></td>
+              </tr>
+          </table>
+          </div>
+        </div>
+      <script>
+        // Skills Tabs
+        function openSkill(evt, skillName) {
+          var i, tabcontent, tablinks;
+
+          tabcontent = document.getElementsByClassName("skills-tab-content");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].style.maxHeight = "100%";
+          }
+
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-skill", "");
+          }
+
+          document.getElementById(skillName).style.display = "block";
+          evt.currentTarget.className += " active-skill";
+        }
+
+        // Affichage de la date actuelle en format fr pour la timeline
+        moment.locale('fr', {
+          months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+          weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
+          longDateFormat : {LL : 'D MMMM YYYY'},
+        });
+        var date = moment().format('LL');
+        document.getElementById("date").innerHTML = date;
+
+        // Progress Bar
+        window.onscroll = function() {ProgressBar()};
+        function ProgressBar() 
+        {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+      </script>
+    </body>
+</html>
