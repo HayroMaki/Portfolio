@@ -553,4 +553,8 @@ p.skill-desc {
     #Compétences {
         margin-top: 300px;
     }
+
+    #date {
+        width:100%;
+    }
 }
