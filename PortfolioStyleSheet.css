@@ -501,7 +501,7 @@ p.skill-desc {
     float: right;
     height: 30px;
     width: 50%;
-    margin-top: 26px;
+    margin-top: 52px;
     border-radius: 0% 0% 0% 100vmax;
     border-bottom: var(--line-size) solid var(--line-color);
     border-left: var(--line-size) solid var(--line-color);
