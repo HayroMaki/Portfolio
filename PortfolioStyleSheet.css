@@ -542,7 +542,7 @@ p.skill-desc {
     }
     .post-timeline {
         position:relative;
-        margin-top: 0px;
+        margin-top: 26px;
         float: right;
         height: 30px;
         width: 50%;
