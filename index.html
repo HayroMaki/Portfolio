@@ -498,8 +498,24 @@
                       Un projet de qualité de développement qui s'est concentré sur l'application de la méthodologie agile <b>SCRUM</b> (travail par Sprints, backlogs, Kanban...) dont j'ai été le <b>Scrum Master</b>.<br><br>
                       Réalisé avec :<br><a href="https://www.linkedin.com/in/guillaume-augeraud/">Guillaume Augeraud</a>,
                       <a href="https://www.linkedin.com/in/rissot/">Benjamin Rissot</a> et
-                      <a href="https://www.linkedin.com/in/a-achirecesei/">Andrei Achirecesei</a>. 
+                      <a href="https://www.linkedin.com/in/a-achirecesei/">Andrei Achirecesei</a>.
+                  </p>
+                </div>
+              </div>
 
+              <div class="column small"> <!--Travia-->
+                <div class="content">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <img class="imgProj" src="img/JeFinance.png" alt="Travia"></a>
+                  <h3>Travia</h3>
+                  <p>
+                    Projet d'équipe d'une application web de recherche de trajets optimisés dans l'univers de star wars composé de différents modules.<br><br>
+                    Serveur Web en tant qu'interface utilisateur, faisant le lien entre les différents modules en <b>HTML/CSS, JavaScript et PHP</b> incluant la bibliothèque leaflet pour une carte de la galaxie.<br>
+                    Module de Génération de graphe en <b>Java</b> en utilisant JDBC pour récupérer les informations de la BDD MySQL.<br>
+                    Module de Traitement des données en <b>C</b> implémentant l'algorithme A*.<br><br>
+                    Réalisé avec :<br><a href="https://www.linkedin.com/in/guillaume-augeraud/">Guillaume Augeraud</a>,
+                    <a href="https://www.linkedin.com/in/rissot/">Benjamin Rissot</a> et
+                    <a href="https://www.linkedin.com/in/a-achirecesei/">Andrei Achirecesei</a>.
                   </p>
                 </div>
               </div>
@@ -585,9 +601,8 @@
         document.getElementById("date").innerHTML = date;
 
         // Progress Bar
-        window.onscroll = function() {ProgressBar()};
-        function ProgressBar() 
-        {
+        window.onscroll = () => {ProgressBar()};
+        function ProgressBar() {
           var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
           var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
           var scrolled = (winScroll / height) * 100;
